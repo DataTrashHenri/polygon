@@ -14,7 +14,7 @@ public class Main extends ApplicationAdapter {
     Renderer renderer;
     Shape shape;
     double t;
-
+    Path testPath;
     @Override
     public void create() {
         batch = new SpriteBatch();
@@ -22,6 +22,7 @@ public class Main extends ApplicationAdapter {
         renderer=new Renderer();
         shape = new Complex(new Point(0,100), Gdx.graphics.getWidth(), t-> (float) Math.sin(t*0.01)*100);
 
+        //testPath = new Path(new Path(new Point(0,0)),new Path(new Point(100,500)));
         t=0;
     }
 
@@ -33,8 +34,8 @@ public class Main extends ApplicationAdapter {
         t+=0.05;
         ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
 
-        renderer.render(shape);
-
+        //renderer.render(shape);
+        //renderer.render(testPath);
     }
 
     @Override

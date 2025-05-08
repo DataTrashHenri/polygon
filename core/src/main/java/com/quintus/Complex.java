@@ -12,7 +12,7 @@ public class Complex extends Shape{
         while (t<=boundX) {
             generatedT = transformable.generatePair(t);
             points.add(new Point(t,generatedT));
-            t+=0.01;
+            t+=0.01f;
         }
     }
 }

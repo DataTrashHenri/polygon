@@ -14,4 +14,12 @@ public class Renderer {
         }
         shapeRenderer.end();
     }
+    public void render(Path path){
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
+        shapeRenderer.setColor(Color.CORAL);
+        for (Point point:path.points) {
+            shapeRenderer.rect(point.x, point.y, 2, 2 );
+        }
+        shapeRenderer.end();
+    }
 }
